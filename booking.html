@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Wash | Msizi's Mobile Wash</title>
+  <meta name="description"
+    content="Book your mobile car wash appointment in Johannesburg. Choose your package, pick a date and time, and we'll come to you.">
+  <link rel="canonical" href="https://www.msizismobilewash.co.za/booking.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Book a Wash | Msizi's Mobile Wash">
+  <meta property="og:description" content="Choose your package, pick a date and time, and we'll come to you.">
+  <meta property="og:url" content="https://www.msizismobilewash.co.za/booking.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">Msizi's <span>Mobile Wash</span></div>
+    <nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Book Your Wash</h1>
+      <p>Tell us where you'll be and when — we'll take care of the rest.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="bookingForm" action="#" method="post" novalidate>
+        <div class="form-row">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required minlength="2" placeholder="e.g. Thabo Nkosi">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required pattern="0[0-9]{9}" placeholder="0731234567">
+        </div>
+
+        <div class="form-row">
+          <label for="package">Wash Package</label>
+          <select id="package" name="package" required>
+            <option value="" disabled selected>Select a package</option>
+            <option value="express">Express Wash — R150</option>
+            <option value="standard">Standard Valet — R280</option>
+            <option value="full">Full Detail — R550</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="vehicleType">Vehicle Type</label>
+          <select id="vehicleType" name="vehicleType" required>
+            <option value="" disabled selected>Select vehicle type</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV / Crossover</option>
+            <option value="bakkie">Bakkie</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-row">
+          <label for="time">Preferred Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+
+        <div class="form-row">
+          <label for="address">Address / Complex Name</label>
+          <input type="text" id="address" name="address" required placeholder="e.g. Parkview Complex, Sandton">
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Additional Notes (optional)</label>
+          <textarea id="notes" name="notes" rows="4"
+            placeholder="Gate code, parking bay number, or anything else we should know."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Confirm Booking</button>
+          <button type="button" id="whatsappBookButton" class="btn-whatsapp">Continue on WhatsApp</button>
+        </div>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Msizi's Mobile Wash. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27731234567?text=Hi%20Msizi%27s%20Mobile%20Wash%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20car%20wash%20services."
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+      <path d="M4 20l1.3-4A8 8 0 1 1 9 19l-5 1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+      <path d="M8.5 10.5c0 3 2.5 5.5 5.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

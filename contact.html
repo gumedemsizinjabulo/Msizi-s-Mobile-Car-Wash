@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Msizi's Mobile Wash</title>
+  <meta name="description"
+    content="Get in touch with Msizi's Mobile Wash. Check our Johannesburg service areas and send us an enquiry.">
+  <link rel="canonical" href="https://www.msizismobilewash.co.za/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Us | Msizi's Mobile Wash">
+  <meta property="og:description" content="Check our Johannesburg service areas and send us an enquiry.">
+  <meta property="og:url" content="https://www.msizismobilewash.co.za/contact.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">Msizi's <span>Mobile Wash</span></div>
+    <nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Contact Us</h1>
+      <p>Questions before you book? Reach out, or check that we cover your area below.</p>
+    </section>
+
+    <section class="contact-details">
+      <div>
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:hello@msizismobilewash.co.za">hello@msizismobilewash.co.za</a></p>
+        <p>Phone: <a href="tel:0731234567">073 123 4567</a></p>
+        <p>Hours: Monday – Saturday, 07:00 – 18:00</p>
+      </div>
+    </section>
+
+    <section class="service-areas">
+      <h2>Our Service Areas</h2>
+      <div class="map-grid">
+        <div class="map-card">
+          <h3>Sandton</h3>
+          <div class="map-embed" id="mapSandton" aria-label="Map showing Sandton service area">
+            <p>Map: Sandton, Johannesburg</p>
+          </div>
+        </div>
+        <div class="map-card">
+          <h3>Rosebank</h3>
+          <div class="map-embed" id="mapRosebank" aria-label="Map showing Rosebank service area">
+            <p>Map: Rosebank, Johannesburg</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Send an Enquiry</h2>
+      <form id="contactForm" action="#" method="post" novalidate>
+        <div class="form-row">
+          <label for="contactName">Full Name</label>
+          <input type="text" id="contactName" name="contactName" required minlength="2">
+        </div>
+
+        <div class="form-row">
+          <label for="contactEmail">Email Address</label>
+          <input type="email" id="contactEmail" name="contactEmail" required>
+        </div>
+
+        <div class="form-row">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="contactMessage" rows="5" required minlength="10"
+            placeholder="How can we help?"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p class="form-status" id="contactFormStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Msizi's Mobile Wash. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27731234567?text=Hi%20Msizi%27s%20Mobile%20Wash%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20car%20wash%20services."
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+      <path d="M4 20l1.3-4A8 8 0 1 1 9 19l-5 1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+      <path d="M8.5 10.5c0 3 2.5 5.5 5.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

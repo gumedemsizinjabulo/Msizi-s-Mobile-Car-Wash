@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.msizismobilewash.co.za/sitemap.xml

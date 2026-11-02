@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-labelledby="heroIllTitle heroIllDesc">
+  <title id="heroIllTitle">Illustration of a car being washed</title>
+  <desc id="heroIllDesc">A simple illustration of a car with water droplets and suds around it, representing Msizi's Mobile Wash.</desc>
+
+  <!-- ground shadow -->
+  <ellipse cx="240" cy="235" rx="170" ry="14" fill="#0B5951" opacity="0.25" />
+
+  <!-- car body -->
+  <path d="M70 205
+           L95 150
+           Q110 120 150 118
+           L300 118
+           Q335 120 350 150
+           L385 175
+           L410 190
+           Q418 195 418 205
+           L418 215
+           Q418 222 411 222
+           L387 222
+           Q385 205 368 205
+           Q351 205 349 222
+           L155 222
+           Q153 205 136 205
+           Q119 205 117 222
+           L79 222
+           Q70 222 70 213 Z"
+        fill="#17A398" stroke="#0F786F" stroke-width="3"/>
+
+  <!-- windows -->
+  <path d="M148 152 L168 124 L232 124 L232 152 Z" fill="#E7F6F4" stroke="#0F786F" stroke-width="2"/>
+  <path d="M244 124 L296 124 Q318 126 330 152 L244 152 Z" fill="#E7F6F4" stroke="#0F786F" stroke-width="2"/>
+
+  <!-- door line -->
+  <line x1="238" y1="152" x2="238" y2="222" stroke="#0F786F" stroke-width="2" />
+
+  <!-- wheels -->
+  <circle cx="136" cy="222" r="24" fill="#12202B"/>
+  <circle cx="136" cy="222" r="9" fill="#D6DAD6"/>
+  <circle cx="368" cy="222" r="24" fill="#12202B"/>
+  <circle cx="368" cy="222" r="9" fill="#D6DAD6"/>
+
+  <!-- suds / droplets -->
+  <circle cx="120" cy="95" r="7" fill="#D9A566" opacity="0.9"/>
+  <circle cx="145" cy="75" r="5" fill="#D9A566" opacity="0.7"/>
+  <circle cx="340" cy="85" r="6" fill="#D9A566" opacity="0.8"/>
+  <circle cx="365" cy="70" r="4" fill="#D9A566" opacity="0.6"/>
+  <path d="M255 60 q6 10 0 16 q-6 -6 0 -16 Z" fill="#17A398" opacity="0.8"/>
+  <path d="M280 45 q6 10 0 16 q-6 -6 0 -16 Z" fill="#17A398" opacity="0.6"/>
+</svg>
