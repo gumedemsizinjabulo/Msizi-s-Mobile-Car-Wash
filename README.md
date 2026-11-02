@@ -138,4 +138,12 @@ msizis-mobile-wash/
 - Deliberately used an original, simple speech-bubble icon rather than
   reproducing WhatsApp's trademarked logo mark.
 
+### Photography
+
+- Added an "Our work" gallery to the home page using four original job
+  photos, resized to 1200px and converted to WebP (about 40-145 KB each).
+- Each image has descriptive `alt` text, explicit `width`/`height`,
+  `loading="lazy"` and a `<figure>`/`<figcaption>` caption.
+- Responsive CSS Grid layout: 3 columns on desktop, 2 on tablet, 1 on mobile.
+
 ## References

@@ -2,7 +2,7 @@
    Msizi's Mobile Wash — Stylesheet (Part 2: CSS Styling & Responsive Design)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap");
 
 /* ---------- Reset ---------- */
 *,
@@ -20,19 +20,19 @@ img {
 
 /* ---------- Base tokens ---------- */
 :root {
-  --color-navy: #12202B;
-  --color-steel: #4A5560;
-  --color-teal: #17A398;
-  --color-teal-dark: #0F786F;
-  --color-sand: #D9A566;
-  --color-bg: #F0F2EF;
-  --color-surface: #FFFFFF;
-  --color-border: #D6DAD6;
-  --color-text: #1B2730;
-  --color-text-muted: #57626B;
+  --color-navy: #12202b;
+  --color-steel: #4a5560;
+  --color-teal: #17a398;
+  --color-teal-dark: #0f786f;
+  --color-sand: #d9a566;
+  --color-bg: #f0f2ef;
+  --color-surface: #ffffff;
+  --color-border: #d6dad6;
+  --color-text: #1b2730;
+  --color-text-muted: #57626b;
 
-  --font-heading: 'Barlow Condensed', 'Arial Narrow', sans-serif;
-  --font-body: 'Inter', Arial, sans-serif;
+  --font-heading: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Inter", Arial, sans-serif;
 
   --max-width: 1180px;
   --radius: 4px;
@@ -136,7 +136,7 @@ nav ul {
   gap: 2rem;
 }
 
-nav li+li {
+nav li + li {
   margin-left: 2rem;
 }
 
@@ -149,13 +149,13 @@ nav ul {
     gap: 2rem;
   }
 
-  nav li+li {
+  nav li + li {
     margin-left: 0;
   }
 }
 
 nav a {
-  color: #E7EBEA;
+  color: #e7ebea;
   font-weight: 500;
   font-size: 0.95rem;
   padding-bottom: 0.25rem;
@@ -194,12 +194,15 @@ nav a.active {
   border-radius: var(--radius);
   border: 2px solid transparent;
   cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .btn-primary {
   background-color: var(--color-teal);
-  color: #062B27;
+  color: #062b27;
 }
 
 .btn-primary:hover,
@@ -210,7 +213,7 @@ nav a.active {
 }
 
 .btn-primary:active {
-  background-color: #0B5951;
+  background-color: #0b5951;
 }
 
 .btn-secondary {
@@ -229,7 +232,7 @@ nav a.active {
 /* ---------- Hero ---------- */
 .hero {
   background-color: var(--color-navy);
-  background-image: linear-gradient(135deg, #12202B 0%, #1C3444 100%);
+  background-image: linear-gradient(135deg, #12202b 0%, #1c3444 100%);
   color: #fff;
   padding: 0;
   display: flex;
@@ -258,7 +261,7 @@ nav a.active {
 }
 
 .hero-content p {
-  color: #C9D2D0;
+  color: #c9d2d0;
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
@@ -289,6 +292,63 @@ nav a.active {
 .highlight-card p {
   color: var(--color-text-muted);
   font-size: 0.95rem;
+}
+
+/* ---------- Gallery (home page) ---------- */
+.gallery h2,
+.gallery-intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-intro {
+  color: var(--color-text-muted);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 14rem;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background-color: var(--color-navy);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-feature {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-tall {
+  grid-row: span 2;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem 1rem 0.75rem;
+  font-size: 0.85rem;
+  color: #fff;
+  background: linear-gradient(
+    to top,
+    rgba(18, 32, 43, 0.85),
+    rgba(18, 32, 43, 0)
+  );
 }
 
 /* ---------- CTA band ---------- */
@@ -476,11 +536,11 @@ textarea:focus {
    required fields as errors before the user has had a chance to fill
    them in. */
 .field-error {
-  border-color: #C0392B !important;
+  border-color: #c0392b !important;
 }
 
 .field-error-message {
-  color: #C0392B;
+  color: #c0392b;
   font-size: 0.85rem;
 }
 
@@ -492,8 +552,8 @@ textarea:focus {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #25D366;
-  color: #06210F;
+  background-color: #25d366;
+  color: #06210f;
   font-weight: 600;
   font-size: 0.9rem;
   padding: 0.7rem 1.1rem;
@@ -505,7 +565,7 @@ textarea:focus {
 
 .whatsapp-float:hover,
 .whatsapp-float:focus {
-  background-color: #1FBF5C;
+  background-color: #1fbf5c;
   text-decoration: none;
 }
 
@@ -516,16 +576,16 @@ textarea:focus {
   font-size: 0.95rem;
   padding: 0.85em 1.75em;
   border-radius: var(--radius);
-  border: 2px solid #25D366;
-  background-color: #25D366;
-  color: #06210F;
+  border: 2px solid #25d366;
+  background-color: #25d366;
+  color: #06210f;
   cursor: pointer;
 }
 
 .btn-whatsapp:hover,
 .btn-whatsapp:focus {
-  background-color: #1FBF5C;
-  border-color: #1FBF5C;
+  background-color: #1fbf5c;
+  border-color: #1fbf5c;
 }
 
 button[type="submit"] {
@@ -558,17 +618,19 @@ button[type="submit"] {
   font-size: 0.95rem;
   padding: 0.75em 1.5em;
   border-radius: var(--radius);
-  border: 2px solid #25D366;
+  border: 2px solid #25d366;
   background-color: #fff;
-  color: #128C4A;
+  color: #128c4a;
   cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .btn-whatsapp:hover,
 .btn-whatsapp:focus {
-  background-color: #25D366;
-  color: #073B22;
+  background-color: #25d366;
+  color: #073b22;
 }
 
 .btn-whatsapp svg {
@@ -602,7 +664,7 @@ button[type="submit"] {
 }
 
 .map-embed {
-  background-color: #DCE2DF;
+  background-color: #dce2df;
   color: var(--color-text-muted);
   height: 220px;
   display: flex;
@@ -618,7 +680,7 @@ button[type="submit"] {
 /* ---------- Footer ---------- */
 footer {
   background-color: var(--color-navy);
-  color: #C9D2D0;
+  color: #c9d2d0;
   margin-top: 3rem;
 }
 
@@ -639,7 +701,7 @@ footer {
   gap: 0;
 }
 
-.footer-links li+li {
+.footer-links li + li {
   margin-left: 1.5rem;
 }
 
@@ -648,13 +710,13 @@ footer {
     gap: 1.5rem;
   }
 
-  .footer-links li+li {
+  .footer-links li + li {
     margin-left: 0;
   }
 }
 
 .footer-links a {
-  color: #C9D2D0;
+  color: #c9d2d0;
   font-size: 0.9rem;
 }
 
@@ -677,6 +739,15 @@ footer {
   .highlight-grid,
   .services-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-feature {
+    grid-column: span 2;
+    grid-row: span 1;
   }
 
   .hero-content {
@@ -732,6 +803,17 @@ footer {
   .team-grid,
   .map-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 15rem;
+  }
+
+  .gallery-feature,
+  .gallery-tall {
+    grid-column: auto;
+    grid-row: span 1;
   }
 
   .hero-content {
